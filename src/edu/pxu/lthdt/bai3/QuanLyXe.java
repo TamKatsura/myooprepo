@@ -7,9 +7,9 @@ public class QuanLyXe {
 		XeOto car = new XeOto("BMW", 2023, 600);
 
 		// TODO code application logic here
-		car = new XeOto("Lamborghini", 2023, 600);
+		car = new XeOto("BMW", 2023, 600);
 
-		XeBus bus = new XeBus("VinBus", 2023, 200, 30);
+		XeBus bus = new XeBus("Vin", 2023, 200, 30);
 
 		System.out.println();
 		System.out.println(bus);
