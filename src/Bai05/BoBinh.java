@@ -41,4 +41,14 @@ public class BoBinh extends NhanVat {
 		return "BoBinh{" + "sucManhPhongThu=" + sucManhPhongThu + ", giap='" + giap + '\'' + ", no=" + no + "} "
 				+ super.toString();
 	}
+
+	@Override
+	protected void hanhDong() {
+		System.out.println("Tap tran");
+	}
+
+	@Override
+	protected void sucManh() {
+		System.out.println("Ky thuat chien dau bo binh");
+	}
 }

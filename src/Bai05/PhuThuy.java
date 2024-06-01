@@ -34,15 +34,15 @@ public class PhuThuy extends NhanVat {
 
 	@Override
 	protected void hanhDong() {
-		System.out.println(this.getTen() + " đang thi triển phép thuật!");
+		System.out.println("Dang thi trien phep thuat");
 	}
 
 	@Override
 	protected void sucManh() {
-		System.out.println("Sức mạnh: có sức mạnh phù thủy " + this.getSucManhPhuThuy());
+		System.out.println("Co suc manh phu thuy");
 	}
 
-	public void raPhuPhap() {
-		System.out.println(this.getTen() + " đang ra phù phép với nguyên tố " + this.getNguyenTo());
+	public void raPhuPhep() {
+		System.out.println("Dang su dung nguyen to lua");
 	}
 }

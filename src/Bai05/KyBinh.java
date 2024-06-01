@@ -33,15 +33,11 @@ public class KyBinh extends NhanVat {
 
 	@Override
 	protected void hanhDong() {
-		System.out.println(this.getTen() + " đang thi triển xung phong tấn công!");
+		System.out.println("Dang xung phong tan cong");
 	}
 
 	@Override
 	protected void sucManh() {
-		System.out.println("Sức mạnh: có sức chịu đựng " + this.getSucChiuDung());
-	}
-
-	public void xongPha() {
-		System.out.println(this.getTen() + " đang xông pha nhanh chóng với " + this.getChienKy());
+		System.out.println("Co suc mang chiu dung");
 	}
 }

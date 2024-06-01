@@ -52,10 +52,10 @@ public class NhanVat {
 	}
 
 	protected void hanhDong() {
-		System.out.println(this.getTen() + " đang hành động!");
+		System.out.println("");
 	}
 
 	protected void sucManh() {
-		System.out.println("Sức mạnh của " + this.getTen() + " là " + this.nangLuong);
+		System.out.println("");
 	}
 }

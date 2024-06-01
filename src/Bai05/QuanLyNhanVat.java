@@ -2,7 +2,7 @@ package Bai05;
 
 public class QuanLyNhanVat {
 	public static void main(String[] args) {
-		// Creating instances of each character type
+
 		KiemKhach kiemKhach = new KiemKhach("001", "An", "Nam", 1200, 1500, "");
 		BoBinh boBinh = new BoBinh("002", "Hùng", "Nam", 2500, 1300, "Giáp vàng");
 		PhuThuy phuThuy = new PhuThuy("003", "Liên", "Nữ", 3500, "Bùa yêu", 2500);

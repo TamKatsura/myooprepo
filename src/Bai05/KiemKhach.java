@@ -33,17 +33,13 @@ public class KiemKhach extends NhanVat {
 				+ super.toString();
 	}
 
-	public void capDo() {
-		System.out.println(this.getTen() + " đang sử dụng " + this.thuatDauKiem + " để chiến đấu!");
-	}
-
 	@Override
 	protected void hanhDong() {
-		System.out.println(this.getTen() + " đang chém lộn với thù địch!");
+		System.out.println("1 hit 1 kill");
 	}
 
 	@Override
 	protected void sucManh() {
-		System.out.println("Có sức mạnh với kinh nghiệm: " + diemKinhNghiem);
+		System.out.println("+max 500% power");
 	}
 }
