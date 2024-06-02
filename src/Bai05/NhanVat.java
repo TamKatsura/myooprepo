@@ -1,24 +1,18 @@
 package Bai05;
 
 public class NhanVat {
-	private String id;
 	private String ten;
-	private String gioiTinh;
-	private double nangLuong;
+	private String id;
+	private String gioitinh;
+	private String hanhdong;
+	private int sucmanh;
 
-	public NhanVat(String id, String ten, String gioiTinh, double nangLuong) {
-		this.id = id;
+	public NhanVat(String ten, String id, String gioitinh, String hanhdong, int sucmanh) {
 		this.ten = ten;
-		this.gioiTinh = gioiTinh;
-		this.nangLuong = nangLuong;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
 		this.id = id;
+		this.gioitinh = gioitinh;
+		this.hanhdong = hanhdong;
+		this.sucmanh = sucmanh;
 	}
 
 	public String getTen() {
@@ -29,33 +23,50 @@ public class NhanVat {
 		this.ten = ten;
 	}
 
-	public String getGioiTinh() {
-		return gioiTinh;
+	public String getId() {
+		return id;
 	}
 
-	public void setGioiTinh(String gioiTinh) {
-		this.gioiTinh = gioiTinh;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public double getNangLuong() {
-		return nangLuong;
+	public String getGioitinh() {
+		return gioitinh;
 	}
 
-	public void setNangLuong(double nangLuong) {
-		this.nangLuong = nangLuong;
+	public void setGioitinh(String gioitinh) {
+		this.gioitinh = gioitinh;
+	}
+
+	public String getHanhdong() {
+		return hanhdong;
+	}
+
+	public void setHanhdong(String hanhdong) {
+		this.hanhdong = hanhdong;
+	}
+
+	public int getSucmanh() {
+		return sucmanh;
+	}
+
+	public void setSucmanh(int sucmanh) {
+		this.sucmanh = sucmanh;
+	}
+
+	public void hanhdong() {
+		System.out.println("...");
+	}
+
+	public void sucmanh() {
+		System.out.println("....");
 	}
 
 	@Override
 	public String toString() {
-		return "NhanVat{" + "id='" + id + '\'' + ", ten='" + ten + '\'' + ", gioiTinh='" + gioiTinh + '\''
-				+ ", nangLuong=" + nangLuong + '}';
+		return "NhanVat{" + "ten=" + ten + ", id=" + id + ", gioitinh=" + gioitinh + ", hanhdong=" + hanhdong
+				+ ", sucmanh=" + sucmanh + '}';
 	}
 
-	protected void hanhDong() {
-		System.out.println("");
-	}
-
-	protected void sucManh() {
-		System.out.println("");
-	}
 }

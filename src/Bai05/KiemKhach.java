@@ -1,45 +1,46 @@
 package Bai05;
 
 public class KiemKhach extends NhanVat {
-	private int diemKinhNghiem;
-	private String thuatDauKiem;
+	private int so_kiem;
+	private int cap_do_su_dung;
 
-	public KiemKhach(String id, String ten, String gioiTinh, double nangLuong, int diemKinhNghiem,
-			String thuatDauKiem) {
-		super(id, ten, gioiTinh, nangLuong);
-		this.diemKinhNghiem = diemKinhNghiem;
-		this.thuatDauKiem = thuatDauKiem;
+	public KiemKhach(int so_kiem, int cap_do_su_dung, String ten, String id, String gioitinh, String hanhdong,
+			int sucmanh) {
+		super(ten, id, gioitinh, hanhdong, sucmanh);
+		this.so_kiem = so_kiem;
+		this.cap_do_su_dung = cap_do_su_dung;
 	}
 
-	public int getDiemKinhNghiem() {
-		return diemKinhNghiem;
+	public int getSo_kiem() {
+		return so_kiem;
 	}
 
-	public void setDiemKinhNghiem(int diemKinhNghiem) {
-		this.diemKinhNghiem = diemKinhNghiem;
+	public void setSo_kiem(int so_kiem) {
+		this.so_kiem = so_kiem;
 	}
 
-	public String getThuatDauKiem() {
-		return thuatDauKiem;
+	public int getCap_do_su_dung() {
+		return cap_do_su_dung;
 	}
 
-	public void setThuatDauKiem(String thuatDauKiem) {
-		this.thuatDauKiem = thuatDauKiem;
-	}
-
-	@Override
-	public String toString() {
-		return "KiemKhach{" + "diemKinhNghiem=" + diemKinhNghiem + ", thuatDauKiem='" + thuatDauKiem + '\'' + "} "
-				+ super.toString();
+	public void setCap_do_su_dung(int cap_do_su_dung) {
+		this.cap_do_su_dung = cap_do_su_dung;
 	}
 
 	@Override
-	protected void hanhDong() {
-		System.out.println("1 hit 1 kill");
+	public void hanhdong() {
+		System.out.println("Chem");
 	}
 
 	@Override
-	protected void sucManh() {
-		System.out.println("+max 500% power");
+	public void sucmanh() {
+		System.out.println("Tram Phong"); // Generated from
+											// nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
 	}
+
+	@Override
+	public void setSucmanh(int sucmanh) {
+		System.out.println("no");
+	}
+
 }

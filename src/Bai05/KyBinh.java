@@ -1,43 +1,74 @@
-package Bai05;
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package bai05.baitap;
+
+/**
+ *
+ * @author lqv20
+ */
 public class KyBinh extends NhanVat {
-	private String chienKy;
-	private int sucChiuDung;
+	private boolean guom;
+	private boolean giao;
+	private boolean cung;
+	private boolean ngua;
 
-	public KyBinh(String id, String ten, String gioiTinh, double nangLuong, String chienKy, int sucChiuDung) {
-		super(id, ten, gioiTinh, nangLuong);
-		this.chienKy = chienKy;
-		this.sucChiuDung = sucChiuDung;
+	public KyBinh(boolean guom, boolean giao, boolean cung, boolean ngua, String ten, String id, String gioitinh,
+			String hanhdong, int sucmanh) {
+		super(ten, id, gioitinh, hanhdong, sucmanh);
+		this.guom = guom;
+		this.giao = giao;
+		this.cung = cung;
+		this.ngua = ngua;
 	}
 
-	public String getChienKy() {
-		return chienKy;
+	public boolean isGuom() {
+		return guom;
 	}
 
-	public void setChienKy(String chienKy) {
-		this.chienKy = chienKy;
+	public void setGuom(boolean guom) {
+		this.guom = guom;
 	}
 
-	public int getSucChiuDung() {
-		return sucChiuDung;
+	public boolean isGiao() {
+		return giao;
 	}
 
-	public void setSucChiuDung(int sucChiuDung) {
-		this.sucChiuDung = sucChiuDung;
+	public void setGiao(boolean giao) {
+		this.giao = giao;
+	}
+
+	public boolean isCung() {
+		return cung;
+	}
+
+	public void setCung(boolean cung) {
+		this.cung = cung;
+	}
+
+	public boolean isNgua() {
+		return ngua;
+	}
+
+	public void setNgua(boolean ngua) {
+		this.ngua = ngua;
+	}
+
+	@Override
+	public void sucmanh() {
+		System.out.println("x2");
+	}
+
+	@Override
+	public void hanhdong() {
+		System.out.println("dang xung phong tan cong");
 	}
 
 	@Override
 	public String toString() {
-		return "KyBinh{" + "chienKy='" + chienKy + '\'' + ", sucChiuDung=" + sucChiuDung + "} " + super.toString();
+		return "KyBinh{" + "guom=" + guom + ", giao=" + giao + ", cung=" + cung + ", ngua=" + ngua + '}';
 	}
 
-	@Override
-	protected void hanhDong() {
-		System.out.println("Dang xung phong tan cong");
-	}
-
-	@Override
-	protected void sucManh() {
-		System.out.println("Co suc mang chiu dung");
-	}
 }

@@ -1,54 +1,55 @@
 package Bai05;
 
 public class BoBinh extends NhanVat {
-	private int sucManhPhongThu;
-	private String giap;
-	private int no;
+	private int giao;
+	private boolean khien;
+	private boolean aogiap;
 
-	public BoBinh(String id, String ten, String gioiTinh, double nangLuong, int sucManhPhongThu, String giap) {
-		super(id, ten, gioiTinh, nangLuong);
-		this.sucManhPhongThu = sucManhPhongThu;
-		this.giap = giap;
-		this.no = 0;
+	public BoBinh(int giao, boolean khien, boolean aogiap, String ten, String id, String gioitinh, String hanhdong,
+			int sucmanh) {
+		super(ten, id, gioitinh, hanhdong, sucmanh);
+		this.giao = giao;
+		this.khien = khien;
+		this.aogiap = aogiap;
 	}
 
-	public int getSucManhPhongThu() {
-		return sucManhPhongThu;
+	public int getGiao() {
+		return giao;
 	}
 
-	public void setSucManhPhongThu(int sucManhPhongThu) {
-		this.sucManhPhongThu = sucManhPhongThu;
+	public void setGiao(int giao) {
+		this.giao = giao;
 	}
 
-	public String getGiap() {
-		return giap;
+	public boolean isKhien() {
+		return khien;
 	}
 
-	public void setGiap(String giap) {
-		this.giap = giap;
+	public void setKhien(boolean khien) {
+		this.khien = khien;
 	}
 
-	public int getNo() {
-		return no;
+	public boolean isAogiap() {
+		return aogiap;
 	}
 
-	public void setNo(int no) {
-		this.no = no;
+	public void setAogiap(boolean aogiap) {
+		this.aogiap = aogiap;
 	}
 
 	@Override
 	public String toString() {
-		return "BoBinh{" + "sucManhPhongThu=" + sucManhPhongThu + ", giap='" + giap + '\'' + ", no=" + no + "} "
-				+ super.toString();
+		return "BoBinh{" + "giao=" + giao + ", khien=" + khien + ", aogiap=" + aogiap + '}';
 	}
 
 	@Override
-	protected void hanhDong() {
-		System.out.println("Tap tran");
+	public void hanhdong() {
+		System.out.println("1 punch");
 	}
 
 	@Override
-	protected void sucManh() {
-		System.out.println("Ky thuat chien dau bo binh");
+	public void sucmanh() {
+		System.out.println("1000%");
 	}
+
 }

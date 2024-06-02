@@ -1,48 +1,43 @@
 package Bai05;
 
 public class PhuThuy extends NhanVat {
-	private String nguyenTo;
-	private int sucManhPhuThuy;
+	private boolean choi;
+	private boolean gay;
 
-	public PhuThuy(String id, String ten, String gioiTinh, double nangLuong, String nguyenTo, int sucManhPhuThuy) {
-		super(id, ten, gioiTinh, nangLuong);
-		this.nguyenTo = nguyenTo;
-		this.sucManhPhuThuy = sucManhPhuThuy;
+	public PhuThuy(boolean choi, boolean gay, String ten, String id, String gioitinh, String hanhdong, int sucmanh) {
+		super(ten, id, gioitinh, hanhdong, sucmanh);
+		this.choi = choi;
+		this.gay = gay;
 	}
 
-	public String getNguyenTo() {
-		return nguyenTo;
+	public boolean isChoi() {
+		return choi;
 	}
 
-	public void setNguyenTo(String nguyenTo) {
-		this.nguyenTo = nguyenTo;
+	public void setChoi(boolean choi) {
+		this.choi = choi;
 	}
 
-	public int getSucManhPhuThuy() {
-		return sucManhPhuThuy;
+	public boolean isGay() {
+		return gay;
 	}
 
-	public void setSucManhPhuThuy(int sucManhPhuThuy) {
-		this.sucManhPhuThuy = sucManhPhuThuy;
+	public void setGay(boolean gay) {
+		this.gay = gay;
 	}
+
+	@Override
+	public void sucmanh() {
+		System.out.println("phu phep");
+	}
+
+	@Override
+    public void hanhdong() {
+        System.out.println("thi trien phep");
 
 	@Override
 	public String toString() {
-		return "PhuThuy{" + "nguyenTo='" + nguyenTo + '\'' + ", sucManhPhuThuy=" + sucManhPhuThuy + "} "
-				+ super.toString();
+		return "PhuThuy{" + "choi=" + choi + ", gay=" + gay + '}';
 	}
 
-	@Override
-	protected void hanhDong() {
-		System.out.println("Dang thi trien phep thuat");
-	}
-
-	@Override
-	protected void sucManh() {
-		System.out.println("Co suc manh phu thuy");
-	}
-
-	public void raPhuPhep() {
-		System.out.println("Dang su dung nguyen to lua");
-	}
 }
