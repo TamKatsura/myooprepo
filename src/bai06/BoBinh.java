@@ -60,4 +60,5 @@ public class BoBinh extends NhanVat implements TanCong, DiChuyen {
 	public String toString() {
 		return "BoBinh{" + "loaivukhi=" + loaivukhi + '}';
 	}
+
 }

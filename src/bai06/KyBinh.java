@@ -60,4 +60,5 @@ public class KyBinh extends NhanVat implements TanCong, DiChuyen {
 	public String toString() {
 		return "KyBinh{" + "loaivukhi=" + loaivukhi + '}';
 	}
+
 }

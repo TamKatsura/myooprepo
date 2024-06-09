@@ -60,4 +60,5 @@ public class PhuThuy extends NhanVat implements TanCong, DiChuyen {
 	public String toString() {
 		return "PhuThuy{" + "loaiphapThuat=" + loaiphapThuat + '}';
 	}
+
 }

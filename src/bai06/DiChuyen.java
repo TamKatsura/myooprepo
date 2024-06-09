@@ -8,4 +8,5 @@ public interface DiChuyen {
 	void nhayLen();
 
 	void bochay();
+
 }

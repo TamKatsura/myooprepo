@@ -1,39 +1,39 @@
 package bai06;
 
-public abstract class KiemKhach extends NhanVat implements TanCong, DiChuyen {
-	private String loaikiem;
-	private int capdo;
+public class KiemKhach extends NhanVat implements TanCong, DiChuyen {
+	private int soKiem;
+	private int capDoSuDung;
 
-	public KiemKhach(String loaikiem, int capdo, String ten, String gioitinh, String id) {
+	public KiemKhach(int soKiem, int capDoSuDung, String ten, String gioitinh, String id) {
 		super(ten, gioitinh, id);
-		this.loaikiem = loaikiem;
-		this.capdo = capdo;
+		this.soKiem = soKiem;
+		this.capDoSuDung = capDoSuDung;
 	}
 
-	public String getLoaikiem() {
-		return loaikiem;
+	public int getSoKiem() {
+		return soKiem;
 	}
 
-	public void setLoaikiem(String loaikiem) {
-		this.loaikiem = loaikiem;
+	public void setSoKiem(int soKiem) {
+		this.soKiem = soKiem;
 	}
 
-	public int getCapdo() {
-		return capdo;
+	public int getCapDoSuDung() {
+		return capDoSuDung;
 	}
 
-	public void setCapdo(int capdo) {
-		this.capdo = capdo;
-	}
-
-	@Override
-	public void sucmanh() {
-		System.out.println("X2 nguoi thuong");
+	public void setCapDoSuDung(int capDoSuDung) {
+		this.capDoSuDung = capDoSuDung;
 	}
 
 	@Override
 	public void hanhdong() {
-		System.out.println("Tram Phong ");
+		System.out.println("Kiem Khach Tram Phong");
+	}
+
+	@Override
+	public void sucmanh() {
+		System.out.println("Kiem Khach x2 nguoi thuong");
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public abstract class KiemKhach extends NhanVat implements TanCong, DiChuyen {
 
 	@Override
 	public void tancongCoVuKhi() {
-		System.out.println("Kiem Khach tan cong co vu khi: " + loaikiem);
+		System.out.println("Kiem Khach tan cong co vu khi: kiem");
 	}
 
 	@Override
@@ -68,6 +68,8 @@ public abstract class KiemKhach extends NhanVat implements TanCong, DiChuyen {
 
 	@Override
 	public String toString() {
-		return "KiemKhach{" + "loaikiem=" + loaikiem + ", capdo=" + capdo + '}';
+		return "KiemKhach{" + "soKiem=" + soKiem + ", capDoSuDung=" + capDoSuDung + ", ten=" + getTen() + ", gioitinh="
+				+ getGioitinh() + ", id=" + getId() + '}';
 	}
+
 }

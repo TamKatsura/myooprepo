@@ -4,6 +4,7 @@ public class NhanVat {
 	private String ten;
 	private String gioitinh;
 	private String id;
+	private Double nangluong;
 
 	public NhanVat(String ten, String gioitinh, String id) {
 		this.ten = ten;
@@ -35,6 +36,14 @@ public class NhanVat {
 		this.id = id;
 	}
 
+	public Double getNangluong() {
+		return nangluong;
+	}
+
+	public void setNangluong(Double nangluong) {
+		this.nangluong = nangluong;
+	}
+
 	public void hanhdong() {
 		System.out.println("Hell");
 	}
@@ -47,4 +56,5 @@ public class NhanVat {
 	public String toString() {
 		return "NhanVat{" + "ten=" + ten + ", gioitinh=" + gioitinh + ", id=" + id + '}';
 	}
+
 }
